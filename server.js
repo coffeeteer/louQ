@@ -1,18 +1,15 @@
 const express = require('express');
 const http = require('http');
-const hbs = require('express-handlebars')
+var exphbs  = require('express-handlebars')
+const path = require('path');
 
 const app = express();
 
-app.engine('hbs', hbs({extname: 'hbs', defaultLayout: 'layout', layoutsDir: __dirname + '/views/layouts/'}));
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'hbs');
+app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+// app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'handlebars');
 
 app.use(express.static('./public'));
-
-// app.get('/', (req, res) => {
-// 	res.sendFile('index.html');
-// });
 
 app.get('/', function(req, res) {
   res.render('index');
