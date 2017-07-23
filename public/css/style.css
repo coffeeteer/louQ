@@ -17,6 +17,11 @@
 	height: 400px;
 }
 
+#lone-img {
+    width: 100%;
+}
+
+
 /*Bootstrap Gallery*/
 .hide-bullets {
     list-style:none;
