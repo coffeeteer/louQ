@@ -15,7 +15,7 @@ app.get('/', function(req, res) {
   res.render('home');
 });
 
-app.get('gallery', function() {
+app.get('/gallery', function(req, res) {
 	res.render('gallery')
 })
 
