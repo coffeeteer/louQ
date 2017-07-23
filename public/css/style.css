@@ -2,8 +2,29 @@
 	height: 50px;
 }
 
-.navbar-collapse {
-    text-align:center;
-    }
+#footer-list {
+	display: inline-block;
+    position: relative;
+    left: 31%;
 }
 
+/*Images*/
+.art-img {
+	width: 100%;
+}
+
+/*Bootstrap Gallery*/
+.hide-bullets {
+    list-style:none;
+    margin-left: -40px;
+    margin-top:20px;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    width: 100%;
+}
+/*Bootstrap Gallery*/

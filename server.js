@@ -15,6 +15,10 @@ app.get('/', function(req, res) {
   res.render('home');
 });
 
+app.get('gallery', function() {
+	res.render('gallery')
+})
+
 const server = new http.Server(app);
 
 const port = 3010;
