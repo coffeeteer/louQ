@@ -87,20 +87,28 @@
 .footerp p {font-family: 'Gudea', sans-serif; }
 
 
-#social:hover {
-    			-webkit-transform:scale(1.1); 
--moz-transform:scale(1.1); 
--o-transform:scale(1.1); 
-			}
-			#social {
-				-webkit-transform:scale(0.8);
-                /* Browser Variations: */
--moz-transform:scale(0.8);
--o-transform:scale(0.8); 
--webkit-transition-duration: 0.5s; 
--moz-transition-duration: 0.5s;
--o-transition-duration: 0.5s;
-			}           
+#social:hover, #blogger:hover {
+    -webkit-transform:scale(1.1); 
+    -moz-transform:scale(1.1); 
+    -o-transform:scale(1.1); 
+}
+#blogger:hover {
+    font-size:scale(1.1);
+}
+#social {
+	-webkit-transform:scale(0.8);
+    /* Browser Variations: */
+    -moz-transform:scale(0.8);
+    -o-transform:scale(0.8); 
+    -webkit-transition-duration: 0.5s; 
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+}    
+
+#blogger{
+    font-size: 41px;
+    top: 1px;
+}       
 /* 
     Only Needed in Multi-Coloured Variation 
                                                */
@@ -110,12 +118,18 @@
 			.social-tw:hover {
 				color: #4099FF;
 			}
-			.social-gp:hover {
-				color: #d34836;
+			.social-in:hover {
+				color: #0077B5;
 			}
-			.social-em:hover {
-				color: #f39c12;
+			.social-bg:hover {
+				color: #DE7008;
 			}
+            .social-yt:hover {
+                color: #E62117;
+            }
+            .social-pin:hover {
+                color: #BD081C;
+            }
 			.nomargin { margin:0px; padding:0px;}
 
 
@@ -145,15 +159,11 @@
 }
 
 /*Blog Icon*/
-#blogger{
+.social-bg {
     font-size: 50px;
     position: relative;
     bottom: -4.1px;
     line-height: 24px;
-}
-
-body {
-    background-color: #BADA55;
 }
 
 .foot-color {
