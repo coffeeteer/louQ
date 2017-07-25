@@ -4,6 +4,9 @@
 
 .q-logo {
 	height: 50px;
+    position: relative;
+    bottom: 15px;
+    right: 4px;
 }
 
 #footer-list {
@@ -37,5 +40,8 @@
     width: 100%;
 }
 
-
+.contact-us {
+    position: relative;
+    top: 2px;
+}
 /*Bootstrap Gallery*/

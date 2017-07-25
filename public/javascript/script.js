@@ -27,7 +27,9 @@ $(document).ready(function(){
             $('#carousel-text').html($('#slide-content-'+id).html());
     });
 
-    
+    $('#myModal').on('click', function () {
+      $('#myInput').focus()
+    });
     //Gallery Carousel End ***********************************
 
 }); //document.ready
