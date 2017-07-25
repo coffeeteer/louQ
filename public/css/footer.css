@@ -106,31 +106,34 @@
 }    
 
 #blogger{
-    font-size: 41px;
-    top: 1px;
+    /*font-size: 26px;*/
+    position: relative;
+    bottom: 4px;
+    /*line-height: 24px;*/
+    border-radius: 5px;
 }       
 /* 
     Only Needed in Multi-Coloured Variation 
                                                */
-			.social-fb:hover {
-				color: #3B5998;
-			}
-			.social-tw:hover {
-				color: #4099FF;
-			}
-			.social-in:hover {
-				color: #0077B5;
-			}
-			.social-bg:hover {
-				color: #DE7008;
-			}
-            .social-yt:hover {
-                color: #E62117;
-            }
-            .social-pin:hover {
-                color: #BD081C;
-            }
-			.nomargin { margin:0px; padding:0px;}
+.social-fb:hover {
+	color: #3B5998;
+}
+.social-tw:hover {
+	color: #4099FF;
+}
+.social-in:hover {
+	color: #0077B5;
+}
+.social-bg:hover {
+	color: #DE7008;
+}
+.social-yt:hover {
+    color: #E62117;
+}
+.social-pin:hover {
+    color: #BD081C;
+}
+.nomargin { margin:0px; padding:0px;}
 
 
 
@@ -156,14 +159,6 @@
 }
 .design a {
     color: #fff;
-}
-
-/*Blog Icon*/
-.social-bg {
-    font-size: 50px;
-    position: relative;
-    bottom: -4.1px;
-    line-height: 24px;
 }
 
 .foot-color {
