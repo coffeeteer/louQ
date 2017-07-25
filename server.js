@@ -16,8 +16,20 @@ app.get('/', function(req, res) {
 });
 
 app.get('/gallery', function(req, res) {
-	res.render('gallery')
-})
+	res.render('gallery');
+});
+
+app.get('/news', function(req, res) {
+	res.render('news');
+});
+
+app.get('/about', function(req, res) {
+	res.render('about')
+});
+
+app.get('/art', function(req, res) {
+	res.render('art')
+});
 
 const server = new http.Server(app);
 
