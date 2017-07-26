@@ -140,11 +140,12 @@
 .social-pin:hover {
     color: #BD081C;
 }
-.nomargin { margin:0px; padding:0px;}
-
-
-
-
+.nomargin { 
+    margin:0px; 
+    padding:0px;
+    position: absolute;
+    left: 12px;
+}
 
 .footer-bottom {
     background-color: #000;

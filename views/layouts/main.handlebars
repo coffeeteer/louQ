@@ -47,14 +47,86 @@
 				<li><button type="button" class="btn btn-lg contact-us" data-toggle="modal" data-target="#lousContactUs"><b>Contact Us</b></button></li>
 				<!-- Modal Begin-->
 				<div class="modal fade" tabindex="-1" role="dialog" id="lousContactUs">
-				  <div class="modal-dialog" role="document">
+
+				<div class="modal-dialog" role="document">
 				    <div class="modal-content">
 				      <div class="modal-header">
 				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				        <h4 class="modal-title">I'm a Modal ;)</h4>
+				        <h4 class="modal-title">Contact Us</h4>
 				      </div>
 				      <div class="modal-body">
-				        <p>One fine body&hellip; if you know what I mean.</p>
+				        <div class="container">
+						    <div class="row">
+						        <div class="col-md-8">
+						            <div class="well well-sm">
+						                <form>
+						                <div class="row">
+						                    <div class="col-md-6">
+						                        <div class="form-group">
+						                            <label for="name">
+						                                Name</label>
+						                            <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+						                        </div>
+						                        <div class="form-group">
+						                            <label for="email">
+						                                Email Address</label>
+						                            <div class="input-group">
+						                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+						                                </span>
+						                                <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
+						                        </div>
+						                        <div class="form-group">
+						                            <label for="subject">
+						                                Subject</label>
+						                            <select id="subject" name="subject" class="form-control" required="required">
+						                                <option value="na" selected="">Choose One:</option>
+						                                <option value="service">Tables</option>
+						                                <option value="suggestions">Desks</option>
+						                                <option value="product">Bedroom</option>
+						                                <option value="product">Sculpture</option>
+						                                <option value="product">Garden</option>
+						                                <option value="product">Jewelry Boxes & Coasters</option>
+						                                <option value="product">Custom Orders</option>
+						                                <option value="product">Photography</option>
+						                                <option value="product">Other</option>
+						                            </select>
+						                        </div>
+						                    </div>
+						                    <div class="col-md-6">
+						                        <div class="form-group">
+						                            <label for="name">
+						                                Message</label>
+						                            <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+						                                placeholder="Message"></textarea>
+						                        </div>
+						                    </div>
+						                    <div class="col-md-12">
+						                        <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+						                            Send Message</button>
+						                    </div>
+						                </div>
+						                </form>
+						            </div>
+						        </div>
+						        <div class="col-md-4">
+						            <form>
+						            <h3><img class="usa-flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/us.svg"> Our office</h3>
+						            <address>
+						                <strong>Lou Quallenberg Studios</strong><br>
+						                1501 Flag St<br>
+						                Llano, TX 78643<br>
+						                <abbr title="Phone">
+						                    P:</abbr>
+						                <a href="tel:+01-325-247-4304">325-247-4304</a>
+						            </address>
+						            <address>
+						                <strong>Full Name</strong><br>
+						                <a href="mailto:info@LouQart.com">info@LouQart.com</a>
+						            </address>
+						            </form>
+						        </div>
+						    </div>
+						</div><!--Modal From End -->
 				      </div>
 				      <div class="modal-footer">
 				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -84,14 +156,14 @@
         	<li class="widget-container widget_nav_menu"><!-- widgets list -->
                 <h1 class="title-widget">Useful links</h1>
                 <ul>
-                	<li><a  href="#"><i class="fa fa-angle-double-right"></i>Resources</a></li>
-                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>Request Info</a></li>
-                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>Photography & design</a></li>
-                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>Sitemap</a></li>
-                    <li><a  href="#"><i class="fa fa-angle-double-right"></i> Achiever's Batch</a></li>
-                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Regular Batch</a></li>
-                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Test & Discussion</a></li>
-                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Fast Track T & D</a></li>
+                	<li><a  href="#">Resources</a></li>
+                    <li><a  href="#">Request Info</a></li>
+                    <li><a  href="#">Photography & design</a></li>
+                    <li><a  href="#">Sitemap</a></li>
+                    <li><a  href="#"><i class="el el-leaf">We're <b>Green</b></i></a></li>
+                    <li><a  href="https://www.houzz.com/pro/lou-quallenberg/lou-quallenberg-studios" target="_blank">houzz</a></li>
+                    <li><a  href="#">Catalog</a></li>
+                    <li><a  href="#">Press Releases</a></li>
                 </ul>
 			</li>
         </ul>
@@ -102,14 +174,14 @@
         	<li class="widget-container widget_nav_menu"><!-- widgets list -->
                 <h1 class="title-widget">Useful links</h1>
                 <ul>
-					<li><a  href="#"><i class="fa fa-angle-double-right"></i>  Test Series Schedule</a></li>
-                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Postal Coaching</a></li>
-                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  PG Dr. Bhatia Books</a></li>
-                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  UG Courses</a></li>
-                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Satellite Education</a></li>
-                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Study Centres</a></li>
-                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  State P.G. Mocks</a></li>
-                    <li><a  href="#" target="_blank"><i class="fa fa-angle-double-right"></i> Results</a></li>
+					<li><a  href="http://www.cowboysindians.com/category/style/art/">Cowboys & Indians</a></li>
+                    <li><a  href="https://www.facebook.com/mountainlivingmag/" target="_blank">Mountain Living Magazine</a></li>
+                    <li><a  href="#">Catalog</a></li>
+                    <li><a  href="#">UG Courses</a></li>
+                    <li><a  href="#">Satellite Education</a></li>
+                    <li><a  href="#">Study Centres</a></li>
+                    <li><a  href="#">State P.G. Mocks</a></li>
+                    <li><a  href="#" target="_blank">Results</a></li>
                 </ul>
 			</li>
         </ul>
@@ -120,14 +192,14 @@
 	        <li class="widget-container widget_nav_menu"><!-- widgets list -->
 	            <h1 class="title-widget">Useful links</h1>
 	            <ul>
-				    <li><a href="#"><i class="fa fa-angle-double-right"></i> Enquiry Form</a></li>
-						<li><a href="#"><i class="fa fa-angle-double-right"></i> Online Test Series</a></li>
-					<li><a href="#"><i class="fa fa-angle-double-right"></i> Grand Tests Series</a></li>
-					<li><a href="#"><i class="fa fa-angle-double-right"></i> Subject Wise Test Series</a></li>
-					<li><a href="#"><i class="fa fa-angle-double-right"></i> Smart Book</a></li>
-					<li><a href="#"><i class="fa fa-angle-double-right"></i> Test Centres</a></li>
-				    <li><a href="#"><i class="fa fa-angle-double-right"></i>  Admission Form</a></li>
-					<li><a href="#"><i class="fa fa-angle-double-right"></i>  Computer Live Test</a></li>
+				    <li><a href="#">Enquiry Form</a></li>
+					<li><a href="#">Online Test Series</a></li>
+					<li><a href="#">Grand Tests Series</a></li>
+					<li><a href="#">Subject Wise Test Series</a></li>
+					<li><a href="#">Smart Book</a></li>
+					<li><a href="#">Test Centres</a></li>
+				    <li><a href="#">Admission Form</a></li>
+					<li><a href="#">Computer Live Test</a></li>
 	            </ul>
 			</li>
 	    </ul>

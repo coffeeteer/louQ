@@ -44,4 +44,8 @@
     position: relative;
     top: 2px;
 }
+
+.modal-dialog, .modal-content {
+    width: 1100px;
+}
 /*Bootstrap Gallery*/
