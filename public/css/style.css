@@ -48,4 +48,9 @@
 .modal-dialog, .modal-content {
     width: 1100px;
 }
+
+.modal-backdrop
+{
+    opacity:.9 !important;
+}
 /*Bootstrap Gallery*/

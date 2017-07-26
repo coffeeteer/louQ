@@ -1,0 +1,41 @@
+@media screen and (max-width: 1099px) {
+	.modal-dialog, .modal-content {
+	width: 900px;
+	} 
+}
+
+@media screen and (max-width: 930px) {
+	.modal-dialog, .modal-content, .contact-us-form, div.well.well-sm, {
+		width: 500px;
+	}
+	.form-control {
+	width: 400px; 
+	} 
+
+	.input-group-addon{
+		width: 20px;
+	}
+}
+
+	@media screen and (max-width: 700px) {
+	.modal-dialog, .modal-content, div.well.well-sm,  {
+	width: 500px; 
+	} 
+
+	.contact-us-form {
+		width: 400px;
+	}
+
+	.form-control, {
+		width: 300px;
+	}
+
+	input.form-control#email {
+		width: 360px;
+	}
+
+	.input-group-addon {
+		width: 20px;
+	}
+}
+
