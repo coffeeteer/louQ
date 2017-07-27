@@ -41,7 +41,7 @@
     position: absolute;
     top: -2px;
     width: 5px;
-}
+} /*Color Pipe before Footer titles*/
 
 
 
@@ -154,7 +154,7 @@
 .design {
     text-align: right;
 }
-.footerp, .title-median {
+.footerp, .title-median, .design a  {
     color: #858585;
 }
 
@@ -164,10 +164,6 @@
     min-height: 30px;
     padding: 7px 0;
 } 
-
-.design a {
-    color: #858585;
-}
 
 .foot-color {
     background-color: #222;
@@ -182,6 +178,19 @@
 .green b {
     color: green;
 }
+
+.green b:hover {
+ text-shadow: green 0 0 4px;
+}
+
+ul .footer-list a{
+    color: #858585;
+}
+
+ul .footer-list a:hover {
+    text-decoration: none;
+    color: #fff;
+}  
 /************************************************************
 *************************Footer******************************
 *************************************************************/
