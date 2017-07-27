@@ -45,12 +45,11 @@
     top: 2px;
 }
 
-.modal-dialog, .modal-content {
+.modal-lg {
     width: 1100px;
 }
 
-.modal-backdrop
-{
+.modal-backdrop {
     opacity:.9 !important;
 }
 /*Bootstrap Gallery*/
