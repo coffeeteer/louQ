@@ -25,7 +25,8 @@
 	line-height: 1;
 	position: relative;
 	text-transform: uppercase;
-	font-family: 'Fjalla One', sans-serif;
+	/*font-family: 'Fjalla One', sans-serif;*/
+    font-family: 'Crimson Text', serif;
 	margin-top: 0;
 	margin-right: 0;
 	margin-bottom: 25px;
@@ -83,7 +84,7 @@
 	font-family: 'Fjalla One', sans-serif;
 }
 
-.footerp p {font-family: 'Gudea', sans-serif; }
+.footerp p {font-family: 'Crimson Text', serif; }
 
 
 #social:hover {

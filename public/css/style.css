@@ -5,9 +5,13 @@
 .q-logo {
 	height: 50px;
     position: relative;
-    bottom: 15px;
+    bottom: 25px;
     right: 4px;
-}
+    font-family: 'Crimson Text', serif;
+    background: -webkit-linear-gradient(#fff, #000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}    
 
 #footer-list {
 	display: inline-block;
