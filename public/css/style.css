@@ -3,11 +3,13 @@
 }
 
 .q-logo {
-	height: 50px;
+	height: 116px;
+    width: 100px;
     position: relative;
-    bottom: 25px;
-    right: 4px;
+    bottom: 27px;
+    right: 6px;
     font-family: 'Crimson Text', serif;
+    font-size: 40px;
     /*background: -webkit-linear-gradient(-72deg, #fff, #000);*/
     /*-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;*/
@@ -22,15 +24,29 @@
     /*Background Color --End*/
     
     /*Letter Color --begin*/
-    /* Old browsers */
-    /*Background Color --Begin*/
-    color: -moz-linear-gradient(right,  #ffffff 0%, #ffffff 50%, #000000 50%, #131313 100%); /* FF3.6-15 */
-    color: -webkit-linear-gradient(right,  #ffffff 0%,#ffffff 50%,#000000 50%,#131313 100%); /* Chrome10-25,Safari5.1-6 */
-    color: linear-gradient(to left,  #ffffff 0%,#ffffff 50%,#000000 50%,#131313 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
-    /*Letter Color --end*/
-    color:linear-gradient(45deg, blue, red)
+     
+      /*Letter Color --end*/
+
 }    
+.q-logo span{
+    font-size: 103px;
+    font-weight: bold;
+    position: relative;
+    right: -16px;
+    display: inline-block;
+    width: 34px;
+    overflow: hidden;
+}
+
+
+.q-logo > span{
+    color: #fff;
+}
+.q-logo > span + span{
+    color: #000;
+    text-indent: -33px;
+    width: 53px;
+}
 
 #footer-list {
 	display: inline-block;
