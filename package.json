@@ -1,0 +1,24 @@
+{
+  "name": "louQArt",
+  "version": "0.0.0",
+  "description": "Redesigning Lou Quallenburg Studios Website",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "cookie-parser": "^1.4.3",
+    "http": "^0.0.0",
+    "express-handlebars": "^3.0.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+     "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coffeeteer/louQ.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
