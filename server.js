@@ -33,7 +33,7 @@ app.get('/art', function(req, res) {
 
 const server = new http.Server(app);
 
-const port = 3010;
+const port = process.env.PORT || 3010;
 server.listen(port, () => {
 	console.log(`Server started on ${port}`)
 });
