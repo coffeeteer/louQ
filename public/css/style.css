@@ -3,11 +3,11 @@
 }
 
 .q-logo {
-	height: 116px;
-    width: 100px;
+	height: 43px;
+    width: 49px;
     position: relative;
-    bottom: 27px;
-    right: 6px;
+    bottom: 31px;
+    right: -12px;
     font-family: 'Crimson Text', serif;
     font-size: 40px;
     /*background: -webkit-linear-gradient(-72deg, #fff, #000);*/
@@ -29,12 +29,13 @@
 
 }    
 .q-logo span{
-    font-size: 103px;
+    font-size: 41px;
     font-weight: bold;
     position: relative;
-    right: -16px;
+    right: -7.5px;
+    bottom: 3px;
     display: inline-block;
-    width: 34px;
+    width: 16px;
     overflow: hidden;
 }
 
@@ -44,8 +45,8 @@
 }
 .q-logo > span + span{
     color: #000;
-    text-indent: -33px;
-    width: 53px;
+    text-indent: -13.8px;
+    width: 22px;
 }
 
 #footer-list {
