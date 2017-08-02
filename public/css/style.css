@@ -12,11 +12,11 @@
  /*   font-size: 40px;*/ /*original fix*/
  
     /*Experimental */
-    height: 43px;
-    width: 49px;
+    height: 82px;
+    width: 74px;
     position: relative;
-    bottom: 31px;
-    right: -211px;
+    bottom: 54px;
+    right: -120px;
     font-family: 'Crimson Text', serif;
     font-size: 40px;
     /*background: -webkit-linear-gradient(-72deg, #fff, #000);*/
@@ -38,13 +38,13 @@
 
 }    
 .q-logo span{
-    font-size: 41px;
+    font-size: 72px;
     font-weight: bold;
     position: relative;
-    right: -7.5px;
+    right: -11.5px;
     bottom: 3px;
     display: inline-block;
-    width: 16px;
+    width: 25px;
     overflow: hidden;
 }
 
@@ -54,8 +54,56 @@
 }
 .q-logo > span + span{
     color: #000;
-    text-indent: -13.8px;
-    width: 22px;
+    text-indent: -25.8px;
+    width: 40px;
+}
+
+.left-side{
+    color: #fff;
+    background-color: #121212;
+    height: 110px;
+    position: relative;
+    top: 102px;
+    left: 57px;
+    width: 409px;
+    font-family: 'Crimson', sans-serif;
+    line-height: 110px;
+}
+
+.left-side span {
+    position: relative;
+    bottom: 25px;
+    font-family: crimson;
+    right: -6px;
+}
+
+.right-side{
+    color: #000;
+    background-color: #fff;
+    display: block;
+    width: 183px;
+    position: relative;
+    left: 192px;
+    font-family: 'Crimson';
+    position: relative;
+    bottom: 59px;
+    height: 41px;
+    z-index: 10;
+}
+
+.right-side:nth-child(2) {
+    line-height: 28px;
+    letter-spacing: 11px;
+    font-weight: 100;
+    text-indent: 20px;
+    font-size: initial;
+    padding-bottom: 28px;
+    z-index: 1;
+}
+
+.brand-container {
+    display: inline;
+    width: 39px;
 }
 
 #footer-list {
@@ -109,36 +157,4 @@
 /*    padding: 10px 15px;*/
 /*    left: 181px;*/
 /*}    */
-
-.left-side{
-    color: #fff;
-    background-color: #000;
-    height: 117px;
-    position: relative;
-    top: 102px;
-    left: 28px;
-    font-family: Crimson;
-    line-height: 110px;
-}
-
-.right-side{
-    color: #000;
-    background-color: #fff;
-    display: block;
-    width: 183px;
-    position: relative;
-    left: 256px;
-    font-family: Crimson;
-    position: relative;
-    bottom: 39px;
-}
-
-.right-side:nth-child(2) {
-    line-height: 28px;
-    letter-spacing: 11px;
-    font-weight: 100;
-    text-indent: 20px;
-    font-size: initial;
-    padding-bottom: 28px;
-}
 /*Bootstrap Gallery*/
