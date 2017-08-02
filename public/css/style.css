@@ -49,11 +49,12 @@
     background-color: #121212;
     height: 110px;
     position: relative;
-    top: 102px;
+    top: 101px;
     left: 57px;
     width: 409px;
     font-family: 'Crimson', sans-serif;
     line-height: 110px;
+    z-index: 1;
 }
 
 .left-side span {
@@ -84,7 +85,7 @@
     text-indent: 20px;
     font-size: initial;
     padding-bottom: 28px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .brand-container {
@@ -93,6 +94,7 @@
     position: relative;
     top: -130px;
     right: 58px;
+    z-index: 50;
 }
 
 .nav-bar-pos {
