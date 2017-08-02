@@ -3,27 +3,13 @@
 }
 
 .q-logo {
-	/*height: 43px;*/
- /*   width: 49px;*/
- /*   position: relative;*/
- /*   bottom: 31px;*/
- /*   right: -12px;*/
- /*   font-family: 'Crimson Text', serif;*/
- /*   font-size: 40px;*/ /*original fix*/
- 
-    /*Experimental */
     height: 82px;
     width: 74px;
     position: relative;
-    bottom: 54px;
-    right: -120px;
+    bottom: 184px;
+    right: -61px;
     font-family: 'Crimson Text', serif;
     font-size: 40px;
-    /*background: -webkit-linear-gradient(-72deg, #fff, #000);*/
-    /*-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;*/
-    /*background: -webkit-linear-gradient(to right, #000, 20px);*/
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+50,000000+50,131313+100 */
     background: #ffffff; /* Old browsers */
     /*Background Color --Begin*/
     background: -moz-linear-gradient(right,  #ffffff 0%, #ffffff 50%, #000000 50%, #131313 100%); /* FF3.6-15 */
@@ -104,6 +90,19 @@
 .brand-container {
     display: inline;
     width: 39px;
+    position: relative;
+    top: -130px;
+    right: 58px;
+}
+
+.nav-bar-pos {
+    position: relative;
+    left: 432px;
+    bottom: 301px;
+}
+
+.navbar-header {
+    height: 73px;
 }
 
 #footer-list {
