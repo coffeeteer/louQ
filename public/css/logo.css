@@ -1,0 +1,104 @@
+.q-logo {
+    height: 82px;
+    width: 74px;
+    position: relative;
+    bottom: 166px;
+    right: -61px;
+    font-family: 'Crimson Text', serif;
+    font-size: 40px;
+    background: #ffffff; /* Old browsers */
+    /*Background Color --Begin*/
+    background: -moz-linear-gradient(right,  #ffffff 0%, #ffffff 50%, #000000 50%, #131313 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(right,  #ffffff 0%,#ffffff 50%,#000000 50%,#131313 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to left,  #ffffff 0%,#ffffff 50%,#000000 50%,#131313 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
+    /*Background Color --End*/
+}
+    
+.q-logo span{
+    font-size: 72px;
+    font-weight: bold;
+    position: relative;
+    right: -11.5px;
+    bottom: 3px;
+    display: inline-block;
+    width: 25px;
+    overflow: hidden;
+}
+
+
+.q-logo > span{
+    color: #fff;
+}
+.q-logo > span + span{
+    color: #000;
+    text-indent: -25.8px;
+    width: 40px;
+}
+
+.left-side{
+    color: #fff;
+    background-color: #121212;
+    height: 82px;
+    position: relative;
+    top: 91px;
+    left: 50px;
+    width: 86px;
+    font-family: 'Crimson', sans-serif;
+    line-height: 110px;
+    z-index: 1;
+}
+
+.left-side span {
+    position: relative;
+    bottom: 25px;
+    font-family: crimson;
+    right: -6px;
+}
+
+.right-side{
+    color: #000;
+    background-color: #fff;
+    display: block;
+    width: 183px;
+    position: relative;
+    left: 192px;
+    font-family: 'Crimson';
+    position: relative;
+    bottom: 41px;
+    height: 41px;
+    z-index: 10;
+}
+
+.right-side:nth-child(2) {
+    line-height: 28px;
+    letter-spacing: 11px;
+    font-weight: 100;
+    text-indent: 20px;
+    font-size: initial;
+    padding-bottom: 28px;
+    z-index: 2;
+}
+
+.brand-container {
+    display: inline;
+    width: 39px;
+    position: relative;
+    top: -130px;
+    right: 58px;
+    z-index: 50;
+}
+
+.nav-bar-pos {
+    position: relative;
+    left: 432px;
+    bottom: 270px;
+}
+
+.navbar-header {
+    height: 73px;
+}
+
+.nav-height {
+    height: 82px;
+}
