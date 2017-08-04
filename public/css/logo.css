@@ -87,9 +87,12 @@
 }
 
 .nav-bar-pos {
-    position: relative;
-    left: 699px;
-    bottom: 270px;
+    /*position: relative;*/
+    /*left: 699px;*/
+    /*bottom: 270px;*/
+    position: absolute;
+    left: 56%;
+    bottom: 17px
 }
 
 .navbar-header {
@@ -104,3 +107,20 @@
     position: relative;
     top: -118px;
 }    
+
+.navbar-alignit .navbar-header {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    height: 50px;
+}
+
+.navbar-alignit .navbar-brand {
+	top: 50%;
+	display: block;
+	position: relative;
+	height: auto;
+	transform: translate(0,-50%);
+	margin-right: 15px;
+  margin-left: 15px;
+}
