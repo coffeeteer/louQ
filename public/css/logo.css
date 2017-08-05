@@ -40,9 +40,10 @@
     color: #fff;
     background-color: #121212;
     height: 82px;
-    position: relative;
-    top: 88px;
-    left: 42px;
+    position: fixed;
+    display: inline-block;
+    top: -20px;
+    left: 17px;
     width: 86px;
     font-family: 'Crimson', sans-serif;
     line-height: 110px;
@@ -61,9 +62,9 @@
     display: block;
     width: 183px;
     position: relative;
-    left: 178px;
     font-family: 'Crimson';
-    bottom: 43px;
+    bottom: 32px;
+    left: 233px;
     height: 41px;
     z-index: 1;
 }
@@ -104,8 +105,9 @@
 }
 
 .navbar-brand {    
-    position: relative;
-    top: -118px;
+    position: fixed;
+    top: 15px;
+    left: 36px;
 }    
 
 .navbar-alignit .navbar-header {
