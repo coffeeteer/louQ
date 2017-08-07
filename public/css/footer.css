@@ -81,7 +81,7 @@
     line-height: 20px;
     margin: 0 0 15px;
     text-transform: uppercase;
-	font-family: 'Fjalla One', sans-serif;
+	/*font-family: 'Fjalla One', sans-serif;*/
 }
 
 .footerp p {font-family: 'Crimson Text', serif; }
@@ -118,27 +118,36 @@
     -webkit-transition-duration: 0.5s; 
     -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
-}       
-/* 
-    Only Needed in Multi-Coloured Variation 
-                                               */
+}    
+
+i#social, i#blogger, .footer-email a{
+    color: #6767E1;
+}
+
+/*   ** Only Needed in Multi-Coloured Variation **    */
 .social-fb:hover {
-	color: #3B5998;
+	color: #3B5998 !important;
+    box-shadow: none;
 }
 .social-tw:hover {
-	color: #4099FF;
+	color: #4099FF !important;
+    box-shadow: none;
 }
 .social-in:hover {
-	color: #0077B5;
+	color: #0077B5 !important;
+    box-shadow: none;
 }
 .social-bg:hover {
-	color: #DE7008;
+	color: #DE7008 !important;
+    box-shadow: none;
 }
 .social-yt:hover {
-    color: #E62117;
+    color: #E62117 !important;
+    box-shadow: none;
 }
 .social-pin:hover {
-    color: #BD081C;
+    color: #BD081C !important;
+    box-shadow: none;
 }
 .nomargin { 
     margin:0px; 
@@ -185,13 +194,14 @@
 }
 
 ul .footer-list a{
-    color: #858585;
+    color: #858585 !important;
 }
 
 ul .footer-list a:hover {
     text-decoration: none;
     color: #fff;
 }  
+
 /************************************************************
 *************************Footer******************************
 *************************************************************/

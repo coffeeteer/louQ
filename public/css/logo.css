@@ -5,8 +5,7 @@
    Some Style Overrides on Bootstrap
   ********************************** */
 .navbar-inverse {
-  background:rgba(45, 45, 45, 0); /*rgba(62, 195, 246, 0);*/
-  /*background: transparent;*/
+  background:rgba(45, 45, 45, 0);
   border-bottom: none;
 }
 
@@ -31,13 +30,14 @@
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
   color: #FFF;
 }
+
 li a {
   text-decoration: none;
   position: relative;
   padding: 6px 0;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
-  color: #2d2d2d; /*lightblue*/
+  color: #2d2d2d; 
 }
 li a:after {
   content: '';
@@ -51,10 +51,10 @@ li a:after {
   transition: all 0.5s;
 }
 li a:hover:after {
-  background-color: white;
+  /*background-color: white;
   width: 60%;
   margin-left: 20%;
-  box-shadow: 0px 0px 10px white;
+  box-shadow: 0px 0px 10px white;*/
 }
 li a.active:after {
   background-color: white;
@@ -87,7 +87,7 @@ img.small-logo{
            Big Logo
   ********************************** */
 .big-logo-row {
-  background-color: #2d2d2d; /*gold*/
+  background-color: #2d2d2d; 
 }
 .big-logo-row .big-logo-container {
   padding-top: 50px;
@@ -101,7 +101,7 @@ img.small-logo{
 img.big-logo.navbar-inverse {
     max-width: 800px;
     position: relative;
-    right: 105px;
+    right: 10%;
     padding-bottom: 50px;
 }
     
