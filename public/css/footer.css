@@ -11,9 +11,10 @@
 	padding-top: 40px;
 	padding-right: 0;
 	padding-bottom: 20px;
-	padding-left: 0;/*	border-top-width: 4px;
+	padding-left: 0;
+    border-top-width: 4px;
 	border-top-style: solid;
-	border-top-color: #003;*/
+	border-top-color: #003;
 }
 
 
@@ -127,28 +128,23 @@ i#social, i#blogger, .footer-email a{
 /*   ** Only Needed in Multi-Coloured Variation **    */
 .social-fb:hover {
 	color: #3B5998 !important;
-    box-shadow: none;
 }
 .social-tw:hover {
 	color: #4099FF !important;
-    box-shadow: none;
 }
 .social-in:hover {
 	color: #0077B5 !important;
-    box-shadow: none;
 }
 .social-bg:hover {
 	color: #DE7008 !important;
-    box-shadow: none;
 }
 .social-yt:hover {
     color: #E62117 !important;
-    box-shadow: none;
 }
 .social-pin:hover {
     color: #BD081C !important;
-    box-shadow: none;
 }
+
 .nomargin { 
     margin:0px; 
     padding:0px;
@@ -198,8 +194,9 @@ ul .footer-list a{
 }
 
 ul .footer-list a:hover {
-    text-decoration: none;
-    color: #fff;
+    text-decoration: none !important;
+    color: #fff !important;
+    box-shadow: none !important;
 }  
 
 /************************************************************

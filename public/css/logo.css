@@ -50,12 +50,14 @@ li a:after {
   position: absolute;
   transition: all 0.5s;
 }
-li a:hover:after {
-  /*background-color: white;
+
+li a.nav-links:hover:after, ul .footer-list a:hover:after {
+  background-color: white;
   width: 60%;
   margin-left: 20%;
-  box-shadow: 0px 0px 10px white;*/
+  box-shadow: 0px 0px 10px white;
 }
+
 li a.active:after {
   background-color: white;
   width: 60%;
@@ -102,7 +104,7 @@ img.big-logo.navbar-inverse {
     max-width: 800px;
     position: relative;
     right: 10%;
-    padding-bottom: 50px;
+    padding: 5px 0 55px 0;
 }
     
 @media (min-width: 400px) {
