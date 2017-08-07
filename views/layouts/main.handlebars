@@ -26,143 +26,138 @@
 
 <body>
 
-<div class="container main-container">		
-<div class="right">
-	<nav class="navbar navbar-inverse">
-	  <div class="container-fluid nav-height">
-	    <div class="navbar-header">
-	    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-			<span class="sr-only">Toggle navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		</button>
-	
-	
-	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-	  <div class="header-top">
-    <!-- Logo HERE ***************** -->
-	    <div class="container" alt="Lou Quallenberg Studios">  
-        <h1 class="brand-label left-side"><span>Lou</span></h1>
-        <h1 alt="Brand" class="header-text q-logo" title="Q"><span>Q</span><span>Q</span></h1>
-        <h1>
-	    			<span class="brand-label right-side">uallenberg</span>
-	    			<span class="brand-label right-side">Studios</span>
-	    		</h1>
-	    </div>
-	  </div>
-	<!-- Logo HERE ------------------------>	
-		
-	<!-- NavBar links, button & Modal BEGIN *******************************-->
-	    <div class="collapse navbar-collapse nav-bar-pos" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav pull-left">
-				<li><a class="nav-links" href="/">Home</a></li>
-				<li><a class="nav-links" href="/news">News</a></li>
-				<li><a class="nav-links" href="/about">About</a></li>
-				<li><a class="nav-links" href="/gallery">Gallery</a></li>
-				<li><a class="nav-links" href="/art">Availabile Art</a></li>
-			</ul>
-			<!-- Navbar begin-->
-			<ul class="nav navbar-nav pull-left">
-				<li><button type="button" class="btn btn-lg contact-us" data-toggle="modal" data-target="#lousContactUs" keyboard="true"><b>Contact Us</b></button></li>
-				<!-- Modal Begin-->
-				<div class="modal fade" tabindex="-1" role="dialog" id="lousContactUs">
+<!-- Big Logo Design BEGIN ********************-->
+ <!-- Fixed navbar -->
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="small-logo-container">
+        <a class="small-logo" href="#"><img class="small-logo" src="https://lou-q-art.herokuapp.com/img/LouQ-logo.svg"></a>
+      </div>
+    </div>
+    <div class="navbar-collapse collapse">
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a class="nav-links" href="/">Home</a></li>
+		<li><a class="nav-links" href="/news">News</a></li>
+		<li><a class="nav-links" href="/about">About</a></li>
+		<li><a class="nav-links" href="/gallery">Gallery</a></li>
+		<li><a class="nav-links" href="/art">Availabile Art</a></li>
+		<li><button type="button" class="btn btn-lg contact-us" data-toggle="modal" data-target="#lousContactUs" keyboard="true"><b>Contact Us</b></button></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
 
-				<div class="modal-dialog modal-lg" role="document">
-				    <div class="modal-content">
-				      <div class="modal-header">
-				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				        <h4 class="modal-title">Contact Us</h4>
-				      </div>
-				      <div class="modal-body">
-				        <div class="container">
-						    <div class="row">
-						        <div class="col-md-8 col-sm-12 form-well">
-						            <div class="well well-sm">
-						                <form class="contact-us-form">
-						                <div class="row">
-						                    <div class="col-md-6 col-sm-12">
-						                        <div class="form-group">
-						                            <label for="name">
-						                                Name</label>
-						                            <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
-						                        </div>
-						                        <div class="form-group">
-						                            <label for="email">
-						                                Email Address</label>
-						                            <div class="input-group">
-						                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
-						                                </span>
-						                                <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
-						                        </div>
-						                        <div class="form-group">
-						                            <label for="subject">
-						                                Subject</label>
-						                            <select id="subject" name="subject" class="form-control" required="required">
-						                                <option value="na" selected="">Choose One:</option>
-						                                <option value="service">Tables</option>
-						                                <option value="suggestions">Desks</option>
-						                                <option value="product">Bedroom</option>
-						                                <option value="product">Sculpture</option>
-						                                <option value="product">Garden</option>
-						                                <option value="product">Jewelry Boxes & Coasters</option>
-						                                <option value="product">Custom Orders</option>
-						                                <option value="product">Photography</option>
-						                                <option value="product">Other</option>
-						                            </select>
-						                        </div>
-						                    </div>
-						                    <div class="col-md-6 col-sm-12">
-						                        <div class="form-group">
-						                            <label for="name">
-						                                Message</label>
-						                            <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
-						                                placeholder="Message"></textarea>
-						                        </div>
-						                    </div>
-						                    <div class="col-md-12">
-						                        <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
-						                            Send Message</button>
-						                    </div>
-						                </div>
-						                </form>
-						            </div>
-						        </div>
-						        <div class="col-md-4">
-						            <form>
-						            <h3><img class="usa-flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/us.svg"> Our office</h3>
-						            <address>
-						                <strong>Lou Quallenberg Studios</strong><br>
-						                1501 Flag St<br>
-						                Llano, TX 78643<br>
-						                <abbr title="Phone">
-						                    P:</abbr>
-						                <a href="tel:+01-325-247-4304">325-247-4304</a>
-						            </address>
-						            <address>
-						                <strong>Full Name</strong><br>
-						                <a href="mailto:info@LouQart.com">info@LouQart.com</a>
-						            </address>
-						            </form>
-						        </div>
-						    </div>
-						</div><!--Modal From End -->
-				      </div>
-				    </div><!-- /.modal-content -->
-				  </div><!-- /.modal-dialog -->
-				</div><!-- /.modal -->
-				<!-- Modal End-->
-			</ul>
-			<!-- Navabr links, button, and modal END------------------------------ -->
-			<!-- Navbar End -->
-			
-		</div>	
-		</div>
-	  </div>
-	</nav>
-</div>
-</div>
-</div>
+<div class="container-fluid big-logo-row">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 big-logo-container">
+<!--             <h1 class="big-logo">↧Big Logo</h1> -->
+        <img class="big-logo" src="https://lou-q-art.herokuapp.com/img/LouQ-logo.svg" alt="Lou Quallenburg Studios">
+      </div><!--/.col-xs-12 -->
+    </div><!--/.row -->
+  </div><!--/.container -->
+</div><!--/.container-fluid -->
+
+    
+<!-- Modal BEGIN ***********-->
+<div class="modal fade" tabindex="-1" role="dialog" id="lousContactUs">
+
+<div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Contact Us</h4>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+		    <div class="row">
+		        <div class="col-md-8 col-sm-12 form-well">
+		            <div class="well well-sm">
+		                <form class="contact-us-form">
+		                <div class="row">
+		                    <div class="col-md-6 col-sm-12">
+		                        <div class="form-group">
+		                            <label for="name">
+		                                Name</label>
+		                            <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+		                        </div>
+		                        <div class="form-group">
+		                            <label for="email">
+		                                Email Address</label>
+		                            <div class="input-group">
+		                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+		                                </span>
+		                                <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
+		                        </div>
+		                        <div class="form-group">
+		                            <label for="subject">
+		                                Subject</label>
+		                            <select id="subject" name="subject" class="form-control" required="required">
+		                                <option value="na" selected="">Choose One:</option>
+		                                <option value="service">Tables</option>
+		                                <option value="suggestions">Desks</option>
+		                                <option value="product">Bedroom</option>
+		                                <option value="product">Sculpture</option>
+		                                <option value="product">Garden</option>
+		                                <option value="product">Jewelry Boxes & Coasters</option>
+		                                <option value="product">Custom Orders</option>
+		                                <option value="product">Photography</option>
+		                                <option value="product">Other</option>
+		                            </select>
+		                        </div>
+		                    </div>
+		                    <div class="col-md-6 col-sm-12">
+		                        <div class="form-group">
+		                            <label for="name">
+		                                Message</label>
+		                            <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+		                                placeholder="Message"></textarea>
+		                        </div>
+		                    </div>
+		                    <div class="col-md-12">
+		                        <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+		                            Send Message</button>
+		                    </div>
+		                </div>
+		                </form>
+		            </div>
+		        </div>
+		        <div class="col-md-4">
+		            <form>
+		            <h3><img class="usa-flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/us.svg"> Our office</h3>
+		            <address>
+		                <strong>Lou Quallenberg Studios</strong><br>
+		                1501 Flag St<br>
+		                Llano, TX 78643<br>
+		                <abbr title="Phone">
+		                    P:</abbr>
+		                <a href="tel:+01-325-247-4304">325-247-4304</a>
+		            </address>
+		            <address>
+		                <strong>Full Name</strong><br>
+		                <a href="mailto:info@LouQart.com">info@LouQart.com</a>
+		            </address>
+		            </form>
+		        </div>
+		    </div>
+		</div>Modal From End
+      </div>
+    </div><!-- /.modal-content --> 
+  </div> --><!-- /.modal-dialog -->
+</div> <!-- /.modal-->
+<!-- Modal END   -------------->
+
+<!-- Big Logo Design END ---------------------->
+
+
 <div class="container" id="main-container">
 	{{{body}}}
 </div>
