@@ -5,8 +5,8 @@
    Some Style Overrides on Bootstrap
   ********************************** */
 .navbar-inverse {
-  /*background: rgba(62, 195, 246, 0);*/
-  background: transparent;
+  background:rgba(45, 45, 45, 0); /*rgba(62, 195, 246, 0);*/
+  /*background: transparent;*/
   border-bottom: none;
 }
 
@@ -82,11 +82,12 @@ li a.active:after {
 img.small-logo{ 
   height: 55px
 }
+
 /* *********************************
            Big Logo
   ********************************** */
 .big-logo-row {
-  background: #2d2d2d; /*gold*/
+  background-color: #2d2d2d; /*gold*/
 }
 .big-logo-row .big-logo-container {
   padding-top: 50px;
@@ -96,6 +97,14 @@ img.small-logo{
   margin: 0;
   padding: 0 0 15px 0;
 }
+
+img.big-logo.navbar-inverse {
+    max-width: 800px;
+    position: relative;
+    right: 105px;
+    padding-bottom: 50px;
+}
+    
 @media (min-width: 400px) {
   .big-logo-row h1 {
     font-size: 4.5em;

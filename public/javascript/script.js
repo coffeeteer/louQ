@@ -9,7 +9,7 @@ $('#carousel').carousel({
 var navbarHeight = $('.navbar').height(); 
 
 $(window).scroll(function() {
-  var navbarColor = "62,195,246";//color attr for rgba
+  var navbarColor ="45,45,45"; //"62,195,246";//color attr for rgba
   var smallLogoHeight = $('.small-logo').height();
   var bigLogoHeight = $('.big-logo').height();
   
