@@ -15,6 +15,13 @@
 	}
 }
 
+/*---- Bottom footer and container*/
+@media screen and (max-width: 950px) {
+	footer.footer1.foot-color {
+		padding-bottom: 55px;
+	}
+}
+
 @media screen and (max-width: 930px) {
 	.modal-lg, .contact-us-form, div.well.well-sm {
 		width: 500px;

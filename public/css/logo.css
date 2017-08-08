@@ -51,7 +51,7 @@ li a:after {
   transition: all 0.5s;
 }
 
-li a.nav-links:hover:after, ul .footer-list a:hover:after {
+li a.nav-links:hover:after, ul .footer-list a:hover:after{
   background-color: white;
   width: 60%;
   margin-left: 20%;
@@ -79,10 +79,12 @@ li a.active:after {
   color: white;
   font-size: 2.5em;
   padding-bottom: 2px;
+  background: transparent;
 }
 
-img.small-logo{ 
-  height: 55px
+img.small-logo, img.small-logo-foot{ 
+  height: 55px;
+  display: inline-block;
 }
 
 /* *********************************
