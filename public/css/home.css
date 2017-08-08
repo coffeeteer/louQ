@@ -18,21 +18,21 @@ body, html {
   font-size: 1.5em;
 }
 
-
 .page-column {
   margin: 0 auto;
   max-width: 800px;
   background:rgba(255,255,255, 0.8);
+  background-size: cover;
   min-height: 100%;
   padding: 0 5px;
 }
 
 .this-page-img {
-  max-width: 100%
+  width: 100%
 }
 
 .page-card {
-  height: 300px;
+  height: 100%; /*300px;*/
   margin-top: 25px;
   padding-top: 5px;
 }
