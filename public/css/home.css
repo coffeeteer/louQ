@@ -1,0 +1,29 @@
+body, html {
+  background-image: url("http://3.bp.blogspot.com/-IoKk27qpRqA/VIiu57D0tMI/AAAAAAAABP0/ka4wB-Xm3Lg/s1600/lou%2Bat%2Baltar%2Blooking.jpg");
+
+    /* Set a specific height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.page-column {
+  margin: 0 auto;
+  max-width: 800px;
+  background-color: #fff;
+  min-height: 100%;
+}
+
+.this-page-img {
+  max-width: 100%
+}
+
+.page-card {
+  height: 300px;
+
+}
