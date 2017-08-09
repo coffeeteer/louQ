@@ -12,7 +12,7 @@
 	padding-right: 0;
 	padding-bottom: 20px;
 	padding-left: 0;
-    border-top-width: 4px;
+    border-top-width: 0;
 	border-top-style: solid;
 	border-top-color: #003;
 }
@@ -121,7 +121,7 @@
     -o-transition-duration: 0.5s;
 }    
 
-i#social, i#blogger, .footer-email a{
+i#social, i#blogger, .footer-email a, .footer-phone a{
     color: #6767E1;
 }
 
