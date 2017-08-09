@@ -82,8 +82,13 @@ li a.active:after {
   background: transparent;
 }
 
-img.small-logo, img.small-logo-foot{ 
+img.small-logo-foot{ 
   height: 55px;
+  display: inline-block;
+}
+
+img.small-logo {
+  height: 40px;
   display: inline-block;
 }
 
