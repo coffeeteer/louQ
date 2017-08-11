@@ -1,12 +1,12 @@
 $(document).ready(function(){
 	console.log('i haz page load');
 	// alert('I haz page load');
-$('#carousel').carousel({
-  interval: 2000
-});
+// $('#carousel').carousel({
+//   interval: 2000
+// });
 
 //Navbar Logo Code ************************************************************* Begin
-var navbarHeight = $('.navbar').height(); 
+var navbarHeight = $('.logo_navbar').height(); //.navabr
 
 $(window).scroll(function() {
   var navbarColor ="45,45,45"; //"62,195,246";//color attr for rgba
@@ -24,7 +24,7 @@ $(window).scroll(function() {
   if (smallPadding < smallLogoEndPos) { smallPadding = smallLogoEndPos; }
   if (smallPadding < 0) { smallPadding = 0; }
   
-  $('.small-logo-container ').css({ "padding-top": smallPadding});
+  $('.small-logo-container').css({ "padding-top": smallPadding});
   
   var navOpacity = ySmall / smallLogoHeight; 
   if  (navOpacity > 1) { navOpacity = 1; }
