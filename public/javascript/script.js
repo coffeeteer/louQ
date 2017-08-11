@@ -30,39 +30,18 @@ $(window).scroll(function() {
   if  (navOpacity > 1) { navOpacity = 1; }
   if (navOpacity < 0 ) { navOpacity = 0; }
   var navBackColor = 'rgba(' + navbarColor + ',' + navOpacity + ')';
-  $('.navbar').css({"background-color": navBackColor});
+  $('.logo_navbar').css({"background-color": navBackColor}); /* navbar*/
   $('img.small-logo').css({"background-color": navBackColor});
   
   var shadowOpacity = navOpacity * 0.4;
   if ( ySmall > 1) {
-    $('.navbar').css({"box-shadow": "0 2px 3px rgba(0,0,0," + shadowOpacity + ")"});
+    $('.logo_navbar').css({"box-shadow": "0 2px 3px rgba(0,0,0," + shadowOpacity + ")"}); /*.navbar */
   } else {
-    $('.navbar').css({"box-shadow": "none"});
+    $('.logo_navbar').css({"box-shadow": "none"}); /*.navbar*/
   }  
 });
 // Navbar Logo Code ------------------------------------------------------------- END
 
   // Lightbox
-  $('.lightbox').click(function(){
-          $('this-page-img').prepend('<div class="backdrop"></div><div class="box"><div class="close">x</div></div>')
-
-          $('.backdrop, .box').animate({'opacity':'.50'}, 300, 'linear');
-          $('.box').animate({'opacity':'1.00'}, 300, 'linear');
-          $('.backdrop, .box').css('display', 'block');
-        });
- 
-        $('.close').click(function(){
-          close_box();
-        });
- 
-        $('.backdrop').click(function(){
-          close_box();
-        });
-
-        function close_box() //Closing Lightbox
-      {
-        $('.backdrop, .box').animate({'opacity':'0'}, 300, 'linear', function(){
-          $('.backdrop, .box').css('display', 'none');
-        });
-      }
+  
 }); //document.ready

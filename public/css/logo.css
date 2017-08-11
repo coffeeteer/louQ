@@ -23,9 +23,9 @@
   }
 }
 
-.navbar-inverse .navbar-nav > li > a {
+/*.navbar-inverse .navbar-nav > li > a {*/
   /*color: black;*/
-}
+/*}*/
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
   color: #FFF;
