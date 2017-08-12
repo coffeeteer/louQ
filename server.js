@@ -7,32 +7,42 @@ const mongoose = require('mongoose');
 const app = express();
 
 //Mongoose *************************************
-mongoose.connect('mongodb://localhost/my_database');
+mongoose.connect('mongodb://localhost/lou-quallenberg-contact', { useMongoClient: true });
+
 const db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'))
+db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
-	//we're connected
+	console.log('We\'re connected baby!')	
 });
 
-const contactForm = mongoose.Schema({
+const puppySchema = mongoose.Schema({
 	name: String
 });
 
-var person = mongoose.model('person', contactForm);
+// var Pupper = mongoose.model('Pupper', puppySchema);
 
-var john = new person({name: 'John'});
-console.log(john.name);
+// var spot = new Pupper({name: 'Spot'});
+// console.log(spot.name);
 
-contactForm.methods.speak = function(){
-	var greeting = this.name
-	? "Hello my name is " + this.name
-	: "I forgot my name. *gives you a dumb look"
+puppySchema.methods.speak = function(){
+	var greets = this.name
+	? "Woof my name is " + this.name
+	: "*NERVOUSLY PEES ON FLOOR AND GIVES YOU A SORROWFUL PUPPER LOOK*"
+	console.log(greets);
 };
 
-var person = mongoose.model('person', contactForm);
+var Pupper = mongoose.model('Pupper', puppySchema);
 
-var buffy = new person({name: 'Buffy'});
-buffy.speak();
+var spike = new Pupper({name: 'Spike'});
+
+spike.save(function(err, spike){
+	if(err) return console.error(err);
+	spike.speak();
+});
+
+Pupper.find({ name: /^spike/ }, function() {
+	console.log('Finished the start-up tutoria with mongoose.')
+});
 //Mongoose ***********************---------------
 
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
