@@ -15,29 +15,36 @@ db.once('open', function() {
 	console.log('We\'re connected baby!')	
 });
 
-const puppySchema = mongoose.Schema({
-	name: String
+const contactSchema = mongoose.Schema({
+	name: String,
+	phone: String,
+	email: String,
+	piece: String,
+	comments: String,
+	daySent: Date
 });
 
-// var Pupper = mongoose.model('Pupper', puppySchema);
+var contactForm = mongoose.model('contactModal', contactSchema);
 
-// var spot = new Pupper({name: 'Spot'});
-// console.log(spot.name);
+var newForm = new contactModal({
+	name: 'test',
+	phone: '555-555-5555',
+	email: 'test@testmail.com',
+	piece: 'table',
+	comments: 'Lorem ipsum',
+	daySent: '01.02.2012'
+});
 
-puppySchema.methods.speak = function(){
-	var greets = this.name
-	? "Woof my name is " + this.name
-	: "*NERVOUSLY PEES ON FLOOR AND GIVES YOU A SORROWFUL PUPPER LOOK*"
-	console.log(greets);
+contactSchema.methods.modal = function(){
+	var popup = this.name
+	? "Thank you, " + this.name " we'll get back to you shortly."
+	: "Sorry, you didn't fill out your name."
+	console.log(popup);
 };
 
-var Pupper = mongoose.model('Pupper', puppySchema);
-
-var spike = new Pupper({name: 'Spike'});
-
-spike.save(function(err, spike){
+spike.save(function(err, ){
 	if(err) return console.error(err);
-	spike.speak();
+	spike.modal();
 });
 
 Pupper.find({ name: /^spike/ }, function() {
