@@ -37,14 +37,14 @@ var newForm = new contactModal({
 
 contactSchema.methods.modal = function(){
 	var popup = this.name
-	? "Thank you, " + this.name " we'll get back to you shortly."
+	? "Thank you, " + this.name + " we'll get back to you shortly."
 	: "Sorry, you didn't fill out your name."
 	console.log(popup);
 };
 
-spike.save(function(err, ){
+newForm.save(function(err, ){
 	if(err) return console.error(err);
-	spike.modal();
+	newForm.modal();
 });
 
 Pupper.find({ name: /^spike/ }, function() {
