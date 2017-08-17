@@ -7,29 +7,13 @@ const mongoose = require('mongoose');
 const app = express();
 
 //Mongoose *************************************
-mongoose.connect('mongodb://localhost/test2', {useMongoClient: true});
+mongoose.connect('mongodb://localhost:27017/test2', {useMongoClient: true});
 
 var db = mongoose.connection
-	.on('error', console.error.bind(console, 'This is an error'))
-	.once('open', ()=> console.log('We\'re connected to Mongoose yay'));
-
-var Rest = mongoose.Schema({
-	type: String,
-	hours: Number,
-	restful: Boolean
-});
-
-Rest.methods.sleep = function() {
-	var dream = this.type
-	? `I dream of Genie while ${this.type} `
-	: `I did not dream at all`
-	console.log(dream)
-};
-
-var Night = mongoose.model('Night', Rest);
-
-var lastNight = new Night({type: 'I lay still', hours: 6, restful: true});
-lastNight.sleep()
+	.on('error', console.error.bind(console, 'This is an error:'))
+	.once('open', function(){
+		console.log('WE\'re connected yayayayayay')	
+	});
 //Mongoose ***********************---------------
 
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
