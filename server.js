@@ -7,49 +7,29 @@ const mongoose = require('mongoose');
 const app = express();
 
 //Mongoose *************************************
-mongoose.connect('mongodb://localhost/lou-quallenberg-contact', { useMongoClient: true });
+mongoose.connect('mongodb://localhost/test2', {useMongoClient: true});
 
-const db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', function() {
-	console.log('We\'re connected baby!')	
+var db = mongoose.connection
+	.on('error', console.error.bind(console, 'This is an error'))
+	.once('open', ()=> console.log('We\'re connected to Mongoose yay'));
+
+var Rest = mongoose.Schema({
+	type: String,
+	hours: Number,
+	restful: Boolean
 });
 
-const contactSchema = mongoose.Schema({
-	name: String,
-	phone: String,
-	email: String,
-	piece: String,
-	comments: String,
-	daySent: Date
-});
-
-var contactForm = mongoose.model('contactModal', contactSchema);
-
-var newForm = new contactModal({
-	name: 'test',
-	phone: '555-555-5555',
-	email: 'test@testmail.com',
-	piece: 'table',
-	comments: 'Lorem ipsum',
-	daySent: '01.02.2012'
-});
-
-contactSchema.methods.modal = function(){
-	var popup = this.name
-	? "Thank you, " + this.name + " we'll get back to you shortly."
-	: "Sorry, you didn't fill out your name."
-	console.log(popup);
+Rest.methods.sleep = function() {
+	var dream = this.type
+	? `I dream of Genie while ${this.type} `
+	: `I did not dream at all`
+	console.log(dream)
 };
 
-newForm.save(function(err, ){
-	if(err) return console.error(err);
-	newForm.modal();
-});
+var Night = mongoose.model('Night', Rest);
 
-Pupper.find({ name: /^spike/ }, function() {
-	console.log('Finished the start-up tutoria with mongoose.')
-});
+var lastNight = new Night({type: 'I lay still', hours: 6, restful: true});
+lastNight.sleep()
 //Mongoose ***********************---------------
 
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
