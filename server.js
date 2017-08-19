@@ -9,27 +9,35 @@ const app = express();
 //Mongoose *************************************
 mongoose.connect('mongodb://localhost/test2', {useMongoClient: true});
 
-var db = mongoose.connection
-	.on('error', console.error.bind(console, 'This is an error'))
-	.once('open', ()=> console.log('We\'re connected to Mongoose yay'));
+var db = mongoose.connection;
+	db.on('error', console.error.bind(console, 'You have and error'))
+	db.once('open', function(){
+		console.log('Mongoose is up.')
+	});
 
-var Rest = mongoose.Schema({
-	type: String,
-	hours: Number,
-	restful: Boolean
-});
+var TvSchema = mongoose.Schema({
+	title: String,
+	year: Number,
+	com: String
+});	
 
-Rest.methods.sleep = function() {
-	var dream = this.type
-	? `I dream of Genie while ${this.type} `
-	: `I did not dream at all`
-	console.log(dream)
+TvSchema.methods.comments = function() {
+	var viewerComments = this.com
+		? this.com + ' is a great flick.'
+		: this.com + ' is absolutely terrible.';
+	console.log(viewerComments);
 };
 
-var Night = mongoose.model('Night', Rest);
+var Shows = mongoose.model('Shows', TvSchema);
 
-var lastNight = new Night({type: 'I lay still', hours: 6, restful: true});
-lastNight.sleep()
+var theRanch = new Shows({title: 'The Ranch', year: 2017, com: ''});
+
+// console.log(theRanch.title, + ' ' + theRanch.year + ' ' + theRanch.com)
+
+theRanch.save(function(err, theRanch){
+	if(err) return console.error(err);
+	theRanch.comments();
+});
 //Mongoose ***********************---------------
 
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
