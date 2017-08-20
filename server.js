@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const app = express();
 
 //Mongoose *************************************
-mongoose.connect('mongodb://localhost/test2', {useMongoClient: true});
+mongoose.connect('mongodb://localhost/test', {useMongoClient: true});
 
 var db = mongoose.connection;
 	db.on('error', console.error.bind(console, 'You have and error'))
@@ -15,29 +15,26 @@ var db = mongoose.connection;
 		console.log('Mongoose is up.')
 	});
 
-var TvSchema = mongoose.Schema({
-	title: String,
-	year: Number,
-	com: String
-});	
-
-TvSchema.methods.comments = function() {
-	var viewerComments = this.com
-		? this.com + ' is a great flick.'
-		: this.com + ' is absolutely terrible.';
-	console.log(viewerComments);
-};
-
-var Shows = mongoose.model('Shows', TvSchema);
-
-var theRanch = new Shows({title: 'The Ranch', year: 2017, com: ''});
-
-// console.log(theRanch.title, + ' ' + theRanch.year + ' ' + theRanch.com)
-
-theRanch.save(function(err, theRanch){
-	if(err) return console.error(err);
-	theRanch.comments();
+const KittySchema = mongoose.Schema({
+	name: String
 });
+
+var Kitten = mongoose.model('Kitten', KittySchema);
+
+var silence = new Kitten({ name: 'Silence' });
+console.log(silence.name);
+
+kittySchema.methods.speak = function () {
+  var greeting = this.name
+    ? "Meow name is " + this.name
+    : "I don't have a name";
+  console.log(greeting);
+}
+
+var fluffy = new Kitten({name: 'Fluffy'})
+fluffy.speak();
+
+
 //Mongoose ***********************---------------
 
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
