@@ -7,13 +7,34 @@ const mongoose = require('mongoose');
 const app = express();
 
 //Mongoose *************************************
-mongoose.connect('mongodb://127.0.0.1:27017/test2', {useMongoClient: true});
+mongoose.connect('mongodb://localhost/test2' , {useMongoClient: true});
 
-var db = mongoose.connection
-	.on('error', console.error.bind(console, 'This is an error:'))
-	.once('open', function(){
-		console.log('WE\'re connected yayayayayay')	
+var db = mongoose.connection;
+	db.on('error', console.error.bind(console, 'You have a mongo connection error:'))
+	db.once('open', function(){
+		console.log('We have a Mongoose Database connection!');
 	});
+	
+var TvSchema = mongoose.Schema({
+	title: String,
+	network: String
+});
+	
+var HboShows =  mongoose.model('HboShows', TvSchema);
+
+var got = new HboShows({title: 'Game of Thrones', network: 'HBO'});
+
+console.log(got.title + ' on ' + got.network);
+
+// TvSchema.methods.jonSnow = function(){
+// 	var snow = this.title
+// 	?	'" Jon Snow is King of the North!" on ' + this.title
+// 	:	'"You know nothing Jon Snow" a famous quote on ' + this.title;
+// 	console.log(snow);
+// };
+
+// got.jonSnow()
+
 //Mongoose ***********************---------------
 
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
