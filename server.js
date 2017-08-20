@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const app = express();
 
 //Mongoose *************************************
-mongoose.connect('mongodb://localhost:27017/test2', {useMongoClient: true});
+mongoose.connect('mongodb://127.0.0.1:27017/test2', {useMongoClient: true});
 
 var db = mongoose.connection
 	.on('error', console.error.bind(console, 'This is an error:'))
