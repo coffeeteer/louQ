@@ -24,7 +24,7 @@ var Kitten = mongoose.model('Kitten', KittySchema);
 var silence = new Kitten({ name: 'Silence' });
 console.log(silence.name);
 
-kittySchema.methods.speak = function () {
+KittySchema.methods.speak = function () {
   var greeting = this.name
     ? "Meow name is " + this.name
     : "I don't have a name";
