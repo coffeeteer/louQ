@@ -7,33 +7,33 @@ const mongoose = require('mongoose');
 const app = express();
 
 //Mongoose *************************************
-mongoose.connect('mongodb://localhost/test2' , {useMongoClient: true});
+mongoose.connect('mongodb://localhost/test', {useMongoClient: true});
 
 var db = mongoose.connection;
-	db.on('error', console.error.bind(console, 'You have a mongo connection error:'))
-	db.once('open', function(){
-		console.log('We have a Mongoose Database connection!');
-	});
-	
-var TvSchema = mongoose.Schema({
-	title: String,
-	network: String
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function() {
+  // we're connected!
+  console.log('we\'re connected');
 });
-	
-var HboShows =  mongoose.model('HboShows', TvSchema);
 
-var got = new HboShows({title: 'Game of Thrones', network: 'HBO'});
+const KittySchema = mongoose.Schema({
+	name: String
+});
 
-console.log(got.title + ' on ' + got.network);
+var Kitten = mongoose.model('Kitten', KittySchema);
 
-// TvSchema.methods.jonSnow = function(){
-// 	var snow = this.title
-// 	?	'" Jon Snow is King of the North!" on ' + this.title
-// 	:	'"You know nothing Jon Snow" a famous quote on ' + this.title;
-// 	console.log(snow);
-// };
+var silence = new Kitten({ name: 'Silence' });
+console.log(silence.name);
 
-// got.jonSnow()
+kittySchema.methods.speak = function () {
+  var greeting = this.name
+    ? "Meow name is " + this.name
+    : "I don't have a name";
+  console.log(greeting);
+}
+
+var fluffy = new Kitten({name: 'Fluffy'})
+fluffy.speak();
 
 //Mongoose ***********************---------------
 
