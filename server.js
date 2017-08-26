@@ -7,32 +7,32 @@ const mongoose = require('mongoose');
 const app = express();
 
 //Mongoose *************************************
-mongoose.connect('mongodb://localhost/test', {useMongoClient: true});
+// mongoose.connect('mongodb://localhost/test', {useMongoClient: true});
 
-var db = mongoose.connection;
-	db.on('error', console.error.bind(console, 'You have and error'))
-	db.once('open', function(){
-		console.log('Mongoose is up.')
-	});
+// var db = mongoose.connection;
+// 	db.on('error', console.error.bind(console, 'You have and error'))
+// 	db.once('open', function(){
+// 		console.log('Mongoose is up.')
+// 	});
 
-const KittySchema = mongoose.Schema({
-	name: String
-});
+// const KittySchema = mongoose.Schema({
+// 	name: String
+// });
 
-var Kitten = mongoose.model('Kitten', KittySchema);
+// var Kitten = mongoose.model('Kitten', KittySchema);
 
-var silence = new Kitten({ name: 'Silence' });
-console.log(silence.name);
+// var silence = new Kitten({ name: 'Silence' });
+// console.log(silence.name);
 
-KittySchema.methods.speak = function () {
-  var greeting = this.name
-    ? "Meow name is " + this.name
-    : "I don't have a name";
-  console.log(greeting);
-}
+// KittySchema.methods.speak = function () {
+//   var greeting = this.name
+//     ? "Meow name is " + this.name
+//     : "I don't have a name";
+//   console.log(greeting);
+// }
 
-var fluffy = new Kitten({name: 'Fluffy'})
-fluffy.speak();
+// var fluffy = new Kitten({name: 'Fluffy'})
+// fluffy.speak();
 
 
 //Mongoose ***********************---------------
